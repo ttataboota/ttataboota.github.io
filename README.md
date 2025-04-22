@@ -44,20 +44,3 @@ git push - u origin master
 ```
 6. github Settings에서 pages로 이동하여, Source를 main branch로 바꿔줍니다.
 7. publish 되었다는 URL로 접속하여 확인합니다 (시간이 좀 걸리니, 5분정도 기다려주세요)
-
-
-## Documentation 📑
-
-튜토리얼 문서는 [웹 포트폴리오 제작 튜토리얼](https://www.notion.so/cucus/85e3bec77d904f1fa282cec4756232c3)에서 확인해주세요.
-
-## Deploy History 🌳
-
-2021-04-22
-
-- 전체 레이아웃 수정
-- header 사진 변경
-
-2021-04-20
-
-- 프로젝트 생성
-
