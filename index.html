@@ -1,797 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
-	<title>풀스택 개발자 구민정</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/aos.css">
-
-	<link rel="stylesheet" href="css/ionicons.min.css">
-
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>데이터 분석가 부규헌 | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin:0; padding:0; }
+    section { padding: 100px 0; }
+    .section-light { background: #f8f9fa; }
+    .section-dark  { background: #ffffff; }
+    .navbar { background: #fff; }
+    /* Brand logo: 두 개의 겹친 원 디자인 */
+    .brand-logo { position: relative; width: 48px; height: 48px; }
+    .circle-1, .circle-2 { position: absolute; width: 40px; height: 40px; border-radius: 50%; }
+    .circle-1 { background: #003366; top: 0; left: 0; }
+    .circle-2 { background: #0055a5; top: 8px; left: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-text {color: #ffffff;font-size: 1.2rem;font-weight: 700;line-height: 1;user-select: none;}
+    .nav-link { color: #003366 !important; font-weight: 600; }
+    .navbar-nav .nav-link.active { border-bottom: 2px solid #003366; }
+    .hero-wrap { height:100vh; background: linear-gradient(135deg,#fff 0%,#e6f7ff 50%,#cceeff 100%); display:flex; align-items:center; justify-content:center; text-align:center; }
+    .hero-wrap h1 { font-size:3.5rem; margin-bottom:.5rem; }
+    .hero-wrap p  { font-size:1.25rem; margin-bottom:1.5rem; }
+    .btn-game { border:2px solid #003366; color:#003366; padding:.75rem 1.5rem; border-radius:.25rem; transition:.3s; text-decoration:none; }
+    .btn-game:hover { background:#003366;color:#fff; text-decoration:none; }
+    .project-icon { width:50px;height:50px;border-radius:50%;margin-right:15px; }
+    h2 { color:#003366; font-size:2.5rem; margin-bottom:3rem; position:relative; padding-bottom:10px; }
+    h2::after { content:''; display:block; width:60px; height:4px; background:#003366; position:absolute; bottom:0; left:0; }
+    .project-item { margin-bottom: 2.5rem; }
+    .project-date { color: #0055a5; font-weight:300;font-size: 0.9rem; margin-left: 0.5rem; }
+    #navi { position:sticky; top:120px; }
+    #navi ul { list-style:none; padding:0; }
+    #navi ul li { margin-bottom:1rem; }
+    #navi ul li a { color:#003366; text-decoration:none; font-weight:600; }
+    #navi ul li a.active { text-decoration:underline; }
+    footer { background:#f8f9fa; padding:20px 0; }
+  </style>
 </head>
+<body data-spy="scroll" data-target=".navbar-nav, #navi ul" data-offset="150">
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top section-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="brand-logo">
+          <div class="circle-1"></div>
+          <div class="circle-2">
+            <span class="logo-text">B</span>
+          </div>  
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home-section">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume-section">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects-section">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Hero -->
+  <section id="home-section" class="hero-wrap section-light">
+    <div>
+      <h1>부규헌</h1>
+      <p>게임을 사랑하는 데이터 분석가</p>
+      <a href="#about-section" class="btn-game">Explore My Story</a>
+    </div>
+  </section>
 
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>K</span>ooMinJeong</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+  <!-- About -->
+  <section id="about-section" class="section-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div style="background-image:url('images/bibidi.gif');height:300px;background-size:cover;"></div>
+        </div>
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>데이터 기반 인사이트로 게임 경험을 풍부하게 만드는 것을 목표로 합니다.</p>
+          <ul>
+            <li><strong>Name:</strong> 부규헌</li>
+            <li><strong>Role:</strong> 데이터 분석가</li>
+            <li><strong>Contact:</strong> 010-9198-1851</li>
+            <li><strong>Email:</strong> <a href="mailto:ttataboota@gmail.com">ttataboota@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#side-projects-section" class="nav-link"><span>Side
-								Projects</span></a>
-					</li>
-					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section class="hero-wrap js-fullheight">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-					<div class="text text-center">
-						<span class="subheading">Hey! I am</span>
-						<h1>구민정</h1>
-						<h2>I'm a
-							<span class="txt-rotate" data-period="500"
-								data-rotate='[  "풀스택 개발자", "스타트업 개발자", "6년차"]'></span>
-						</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-		<div class="mouse">
-			<a href="#" class="mouse-icon">
-				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-			</a>
-		</div>
-	</section>
-
-	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-6 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/about.jpg);">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-							<p>커피와 노트북만 있다면, 언제 어디서나 즐겁게 일하는 6년차 개발자 정쿠입니다. </p>
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span>구민정</span></li>
-								<li class="d-flex"><span>Address:</span> <span>성남시 분당구 정자동</span></li>
-								<li class="d-flex"><span>Email:</span> <span>cookie00421@gmail.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>+82-10-1234-5678</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p class="mb-4">
-								<span class="number" data-number="24">0</span>
-								<span>Project complete</span>
-							</p>
-							<p><a target="_blank"
-									href="https://drive.google.com/file/d/1hlXX2n15rPwT8s6vseOf9uBwid22ugWq/view"
-									class="btn btn-primary py-3 px-3">이력서 다운받기</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container-fluid px-md-5">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="365">0</strong>
-							<span>코딩한 일수</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="100">0</strong>
-							<span>Complete Projects</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="100">0</strong>
-							<span>Happy Customers</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="50">0</strong>
-							<span>Cups of coffee</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <!-- Resume -->
+  <section id="resume-section" class="section-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav id="navi">
+            <ul>
+              <li><a href="#education" class="active">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#Certifications">Certifications</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-9">
+          <div id="education">
+            <h2>Education</h2>
+            <p><span>2017 – 2025</span> 서울시립대학교, 수학과</p>
+            <p>수학적 사고와 통계 분석 능력을 기르며 데이터 분석에 대한 기초를 확립했습니다.</p>
+          </div>
+          <div id="experience" class="mt-5">
+            <h2>Experience</h2>
+            <p><span>2021 – 2024</span> 수학 강사 in U2M</p>
+            <p>학생들의 흥미 요소를 분석하고, 수학적 직관성과 산술적 이해 두 방식으로 모두 이해시키는 수업을 진행했습니다. </p>
+          </div>
+          <div id="skills" class="mt-5">
+            <h2>Skills</h2>
+            <ul>
+              <li>Python (Pandas, Matplotlib)</li>
+              <li>SQL</li>
+              <li>Tableau</li>
+            </ul>
+          </div>
+          
+          <div id="Certifications" class="mt-5">
+            <h2>Certifications</h2>
+            <ul>
+              <li>SQLD</li>
+              <li>ADsP</li>
+              <li>OPIc IM2</li>
+            </ul>
+          </div>
 
 
-	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<nav id="navi">
-						<ul>
-							<li><a href="#page-1">Education</a></li>
-							<li><a href="#page-2">Experience</a></li>
-							<li><a href="#page-3">Skills</a></li>
-							<li><a href="#page-4">Projects</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-md-9" id="education-section">
-					<div id="page-1" class="page one">
-						<h2 class="heading">Education</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2010-2015</span>
-								<h2>컴퓨터 공학 & 전자 공학 복수 전공</h2>
-								<span class="position">Handong Global Univercity</span>
-								<p>전산 동아리 활동과 기숙사 생활을 통해, 함께 일하는 밥을 배웠습니다. Computer Science 기초 지식을 4년간 탄탄히 쌓아 빠르고 올바른
-									방향으로 성장할 수 있는 개발자가 되었습니다. </p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Computer Processing Systems/Computer Software</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-									into your mouth.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Diploma in Computer</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-									into your mouth.</p>
-							</div>
-						</div>
-					</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					<div id="page-2" class="page two">
-						<h2 class="heading">Work Experience</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2019.09-2021.04(1년 8개월)</span>
-								<h2>Full Stack Developer</h2>
-								<span class="position">주식회사 더라피스</span>
-								<p>동남아 스파 예약 서비스 Web 개발, 온라인 요가 수업 예약/결제 서비스 개발<br /></p>
-								<b class="text-primary">기술 스택</b>
-								<p>ReactJS, Next.js,Typescript, Styled-components, AWS S3 static hosting</p>
-								<b class="text-primary">주요 업무 </b>
-								<div>
-									<div> - React + typescript 기반 웹 서비스 개발/운영</div>
-									<div> - 디자인 시스템 도입을 위한 UI 컴포넌트 관리용 storybook 도입</div>
-									<div> - SEO를 위한 Next.js 도입</div>
-									<div> - Serverless 환경을 위한 s3 기반의 static hosting 구축</div>
-								</div>
-								</p>
-							</div>
+  <!-- Projects -->
+  <section id="projects-section" class="section-dark">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-md-6 project-item">
+          <div class="d-flex align-items-start">
+            <img src="images/maple.jpg" class="project-icon" alt="Maple">
+            <div>
+              <h4>코디 아이템 추천 프로젝트 <span class="project-date">2024.06</span></h4>
+              <p>메이플스토리 API를 이용해 유저 데이터를 확보하고 정제한 후 Pearson, ALS 알고리즘을 사용해 추천 시스템을 구축했습니다. 유저 아이템 기반으로 유사도가 높은 타 유저의 아이템을 추천하는 방식을 채용했습니다.</p>
+              <p><strong>Tech Stack:</strong> Python, Pandas</p>
+              <a href="https://github.com/ttataboota/GitHuboo/tree/main/Maple_local/User_item_reco" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="NOTION_URL"  class="btn btn-outline-primary btn-sm ml-2">Notion</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 project-item">
+          <div class="d-flex align-items-start">
+            <img src="images/maple.jpg" class="project-icon" alt="Maple">
+            <div>
+              <h4>황금문어 확률 시뮬레이션 <span class="project-date">2025.02</span></h4>
+              <p>마르코프 체인 전이행렬을 이용해 목표 단계와 남은 먹이주기 횟수를 분석, 최적의 목표 단계를 계산하는 시스템을 구축했습니다. 이후 Discord 봇으로 배포했습니다.</p>
+              <p><strong>Tech Stack:</strong> Python, NumPy, Discord.py</p>
+              <a href="https://github.com/ttataboota/GitHuboo/tree/main/Maple_local/Octo" class="btn btn-outline-primary btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 project-item">
+          <div class="d-flex align-items-start">
+            <img src="images/LostArk.jpg" class="project-icon" alt="Lost Ark">
+            <div>
+              <h4>직업 추천 프로젝트 <span class="project-date">2024.12</span></h4>
+              <p>메이플스토리 코디 아이템 추천 시스템을 응용해 직업 추천 알고리즘을 개발하고, NeonDB 및 Render로 웹에 배포했습니다.</p>
+              <p><strong>Tech Stack:</strong> Python, Flask, NeonDB, Render</p>
+              <a href="https://github.com/ttataboota/LostArk_reco" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://www.notion.so/LostArk-Data-Analysis-1a606633f70a801a9c98d902d830370c"  class="btn btn-outline-primary btn-sm ml-2">Notion</a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 project-item">
+          <div class="d-flex align-items-start">
+            <img src="images/TFT.png" class="project-icon" alt="TFT">
+            <div>
+              <h4>TFT 덱 클러스터링 프로젝트 <span class="project-date">2024.08</span></h4>
+              <p>KMeans, DBSCAN 및 자체 개발한 Slope_4 알고리즘을 활용해 클러스터링을 수행하고, Tabula로 시각화했습니다.</p>
+              <p><strong>Tech Stack:</strong> Python, scikit-learn, Tabula</p>
+              <a href="https://github.com/ttataboota/GitHuboo/tree/main/TFT_local" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="https://www.notion.so/TFT_S13-Data-Analysis-1a606633f70a80ee827dd751bb6b1c23"  class="btn btn-outline-primary btn-sm ml-2">Notion</a>
+              <a href="https://public.tableau.com/app/profile/gyuhun.boo/viz/TFT_DATA_Final/sheet1" class="btn btn-outline-primary btn-sm ml-2">Tabula</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 project-item">
+          <div class="d-flex align-items-start">
+            <img src="images/BattleGround.png" class="project-icon" alt="PUBG">
+            <div>
+              <h4>무기별 분석 프로젝트 <span class="project-date">2025.01</span></h4>
+              <p>상위권 유저 플레이 데이터를 수집·정제하여 총기별 명중률, 타격 부위, 유효 사격 거리 등을 분석했습니다.</p>
+              <p><strong>Tech Stack:</strong> Python, Pandas, Matplotlib</p>
+              <a href="https://github.com/ttataboota/GitHuboo/tree/main/BG_local" class="btn btn-outline-primary btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 project-item">
+          <div class="d-flex align-items-start">
+            <img src="images/LOL.jpg" class="project-icon" alt="LOL">
+            <div>
+              <h4>유저 플레이 데이터 분석 <span class="project-date">2024.10</span></h4>
+              <p>LoL API를 이용해 인게임 데이터를 수집하고, 시간대별 위치 정보를 분석해 상위권 유저 특성을 도출했습니다.</p>
+              <p><strong>Tech Stack:</strong> Python, Riot API, Pandas</p>
+              <a href="https://github.com/ttataboota/GitHuboo/tree/main/LOL_local" class="btn btn-outline-primary btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 project-item">
+          <div class="d-flex align-items-start">
+            <img src="images/shopping.jpg" class="project-icon" alt="PUBG">
+            <div>
+              <h4>쇼핑몰 고객 LVT 분석 <span class="project-date">2025.01</span></h4>
+              <p>실제 고객 데이터를 활용해 90일/120일 이내의 예상 구매 횟수와 금액등을 예측, 주 고객층의 이용 시간 분석 및 미끼 상품의 효용성을 검증했습니다. </p>
+              <p><strong>Tech Stack:</strong> Python, Pandas, Matplotlib</p>
+              <a href="https://github.com/ttataboota/GitHuboo/tree/main/LTV_local" class="btn btn-outline-primary btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Web Designer</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Web Marketing</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Art &amp; Creative Director</h2>
-								<span class="position">Side Tech</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div>
-					</div>
-					<div id="page-3" class="page three">
-						<h2 class="heading">Skills</h2>
-						<div class="row progress-circle mb-5">
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">CSS</h2>
+  <!-- Contact -->
+  <section id="contact-section" class="section-light">
+    <div class="container text-center">
+      <h2>Contact Me</h2>
+      <p><a href="mailto:ttataboota@gmail.com">ttataboota@gmail.com</a></p>
+    </div>
+  </section>
 
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='90'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
+  <footer class="text-center py-3 section-dark">
+    <p class="mb-0">Copyright © 2025 All rights reserved | This template is made with ❤️ by Colorlib</p>
+  </footer>
 
-									<!-- Demo info -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div>
-									<!-- END -->
-								</div>
-							</div>
-
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='80'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
-
-									<!-- Demo info -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div>
-									<!-- END -->
-								</div>
-							</div>
-
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">jQuery</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='75'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
-
-									<!-- Demo info -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div>
-									<!-- END -->
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>React</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>jQuery</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>HTML5</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
-											aria-valuemin="0" aria-valuemax="100" style="width:95%">
-											<span>95%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>CSS3</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>WordPress</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>SEO</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="page-4" class="page four">
-						<h2 id="projects-section" class="heading">Projects</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2019.09-2020.08</span>
-								<div class="d-flex">
-									<h2>웰리스 여행 상품 예약 플랫폼 개발</h2>
-									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
-											class="btn btn-outline-secondary"
-											href="https://github.com/congchu/portfolio-template-2">Github</a>&nbsp;<a
-											class="btn btn-outline-secondary" target="_blank"
-											href="/images/project_1_screenshot.png">스크린샷</a>&nbsp;<a
-											class="btn btn-outline-secondary" target="_blank"
-											href="https://www.wellytravel.com/">Link</a>
-									</div>
-								</div>
-								<span class="position">주식회사 더라피스</span>
-								<div> <b class="text-dark">기술 스택 : </b>React, Typescript, Next.js, Styled-Component,
-									MobX
-								</div>
-								<div> <b class="text-dark">주요 기능 : </b> 회원 관리 및 SNS 로그인, 상품 리스트 확인, 상품 상세 정보
-									확인, 예약 관리, 결제 </div>
-								<p> React </p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Top 5 LeaderShip Exellence Winner</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Top 4 Web Tester</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Art &amp; Creative Director</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="ftco-section ftco-project">
-		<div class="container-fluid px-md-0">
-			<div class="row no-gutters justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 id="side-projects-section" class="mb-4">Side Projects</h2>
-					<p>꾸준히 사이드 프로젝트를 진행하며, 다양한 분야의 기술 스택을 경험해왔습니다.</p>
-				</div>
-			</div>
-			<div class="row no-gutters">
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-project-1.png);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://qpi.kr/"> QPI - 소개팅 서비스 소개 페이지 개발</a></h3>
-							<span>UI/UX 디자인부터 웹 호스팅까지 전체 영역을 담당하였습니다.</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-2.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-3.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-4.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-5.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section" id="blog-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Blog</h1>
-					<h2 class="mb-4">My Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>함께할 <span>회사를 찾는 중</span> 입니다.</h2>
-					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-					<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">연락주세요.</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Contact Me</h2>
-					<p>회사와 함께 성장하는 개발자가 되겠습니다. 연락주세요.</p>
-				</div>
-			</div>
-
-			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-map-signs"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Address</h3>
-							<p>성남시 분당구 정자동</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Contact Number</h3>
-							<p><a href="tel://1234567920">+ 010 4277 1234</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Email Address</h3>
-							<p><a href="mailto:info@yoursite.com">cookie00421@gmail.com</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-globe"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Website</h3>
-							<p><a href="#">yoursite.com</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
-							href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-
-
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
-
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-
-	<script src="js/main.js"></script>
-
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scrollspy
+    $(function(){
+      $('body').scrollspy({ target: '.navbar-nav, #navi ul', offset: 150 });
+      // 좌측 네비 active 클래스 토글
+      $('#navi ul li a').on('activate.bs.scrollspy', function(){
+        $('#navi ul li a').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+  </script>
 </body>
-
 </html>
